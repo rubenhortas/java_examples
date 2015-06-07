@@ -1,2 +1,2 @@
 # java_examples
-Small examples of code in java
+Small examples of Java code
