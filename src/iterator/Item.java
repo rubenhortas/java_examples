@@ -32,7 +32,7 @@ public class Item {
 		List<Item> itemList = new ArrayList<Item>(n);
 		
 		for(int i=0; i<n; i++) {
-			Item newItem = new Item(n, String.format("Item %d", i));
+			Item newItem = new Item(i, String.format("Item %d", i));
 			itemList.add(newItem);
 		}
 		
