@@ -38,4 +38,9 @@ public class Item {
 		
 		return itemList;
 	}
+	
+	@Override
+	public String toString() {
+		return String.format("%d - %s", this.number, this.description);
+	}
 }
