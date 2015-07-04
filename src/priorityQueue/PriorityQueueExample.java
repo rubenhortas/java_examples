@@ -16,12 +16,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Random;
 
 public class PriorityQueueExample {
 
 	
-	private static void printQueue(Queue q) {
+	private static void printQueue(Queue<Integer> q) {
 		while(q.peek() != null) {
 			System.out.print(q.remove() + " ");
 		}
