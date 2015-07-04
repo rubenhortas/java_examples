@@ -22,7 +22,7 @@ public class HashSetExample {
 	 */
 	public static void main(String[] args) {
 
-		Random random = new Random(50);
+		Random random = new Random(47);
 		
 		Set<Integer> intSet = new HashSet<Integer>();
 		
