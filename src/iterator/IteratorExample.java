@@ -11,7 +11,6 @@
 
 package iterator;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -19,14 +18,8 @@ import java.util.List;
 public class IteratorExample {
 	
 	public static void main(String[] args) {
-	
-		// Item class from lists package
-		List<Item> itemList = new ArrayList<Item>();
-
-		itemList.add(new Item(1, "One"));
-		itemList.add(new Item(2, "Two"));
-		itemList.add(new Item(3, "Three"));
-		itemList.add(new Item(4, "Four"));
+		
+		List<Item> itemList = Item.arrayList(4);
 		
 		Iterator<Item> it = itemList.iterator();
 		
