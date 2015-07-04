@@ -19,9 +19,9 @@ public class Item {
 	public Integer number;
 	public String description;
 	
-	public Item(Integer number, String description) {
+	public Item(Integer number) {
 		this.number = number;
-		this.description = description;
+		this.description = String.format("Item %02d", number);
 	}
 	
 	/*
@@ -32,7 +32,7 @@ public class Item {
 		List<Item> itemList = new ArrayList<Item>(n);
 		
 		for(int i=0; i<n; i++) {
-			Item newItem = new Item(i, String.format("Item %d", i));
+			Item newItem = new Item(i);
 			itemList.add(newItem);
 		}
 		
