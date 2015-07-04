@@ -26,7 +26,7 @@ public class IteratorExample {
 		while(it.hasNext()) {
 		
 			Item i = it.next();
-			System.out.println(i.number + " - " + i.description);
+			System.out.println(i.toString());
 		}
 	}
 }
