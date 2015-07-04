@@ -21,6 +21,7 @@ public class IteratorExample {
 	
 	public static void main(String[] args) {
 	
+		// Item class from lists package
 		List<Item> itemList = new ArrayList<Item>();
 
 		itemList.add(new Item(1, "One"));
