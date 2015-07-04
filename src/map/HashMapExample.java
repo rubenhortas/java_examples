@@ -19,7 +19,7 @@ public class HashMapExample {
 
 	public static void main(String[] args) {
 
-		Random random = new Random(25);
+		Random random = new Random(47);
 		
 		Map<Integer, Integer> intMap = new HashMap<Integer, Integer>();
 		
