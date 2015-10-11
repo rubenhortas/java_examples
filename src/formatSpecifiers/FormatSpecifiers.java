@@ -38,6 +38,7 @@ public class FormatSpecifiers {
 		f.format("*%2.3f*\n", f1);
 		f.format("*%2.3f*\n", f2); // Rounds the number
 		
+		f.close();
 	}
 
 }
