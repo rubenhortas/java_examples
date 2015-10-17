@@ -80,5 +80,24 @@ public class ArrayExamples {
 		/** Comparison **/
 		System.out.println("Comparison");
 		System.out.println("originalArray == copyArray:" + Arrays.equals(originalArray, copyArray));
+		
+		/** Sorting **/
+		System.out.println("Sorting");
+		Integer[] unsortedArray = new Integer[10];
+		for(int i = 0; i <10; i++) {
+			unsortedArray[i] = (unsortedArray.length - i);
+		}
+		System.out.println(Arrays.toString(unsortedArray));
+		
+		Arrays.sort(unsortedArray); // Quicksort for primitives, Merge sort for objects
+		System.out.println("After sort");
+		System.out.println(Arrays.toString(unsortedArray));
+		
+		/** Binary search 
+		 * Only for sorted arrays
+		**/
+		int position = Arrays.binarySearch(unsortedArray, 8);
+		System.out.println("Binary search");
+		System.out.println("Position of 8 in unsortedArray (after sort): " + position);
 	}
 }
