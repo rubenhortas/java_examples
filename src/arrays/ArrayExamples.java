@@ -60,5 +60,25 @@ public class ArrayExamples {
 		int[] arrayToFill = new int[20];
 		Arrays.fill(arrayToFill, 1);
 		System.out.println(Arrays.toString(arrayToFill));
+		
+		/** Copy **/
+		System.out.println("Copy");
+		Integer[] originalArray = new Integer[10];
+		Integer[] copyArray = new Integer[10];
+		
+		Arrays.fill(originalArray, 1);
+		Arrays.fill(copyArray, 2);
+		
+		System.out.println(Arrays.toString(originalArray));
+		System.out.println(Arrays.toString(copyArray));
+		
+		System.arraycopy(originalArray, 0, copyArray, 0, originalArray.length);
+		
+		System.out.println("After copy");
+		System.out.println(Arrays.toString(copyArray));
+		
+		/** Comparison **/
+		System.out.println("Comparison");
+		System.out.println("originalArray == copyArray:" + Arrays.equals(originalArray, copyArray));
 	}
 }
