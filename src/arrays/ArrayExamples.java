@@ -81,6 +81,23 @@ public class ArrayExamples {
 		System.out.println("Comparison");
 		System.out.println("originalArray == copyArray:" + Arrays.equals(originalArray, copyArray));
 		
+		Integer[][] multiDimensionalArray1 = new Integer[5][5];
+		Integer[][] multiDimensionalArray2 = new Integer[5][5];
+		
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<5; j++) {
+				multiDimensionalArray1[i][j] = i;
+				multiDimensionalArray2[i][j] = i;
+			}
+		}
+		
+		// deepToSTring to print multi dimensional arrays
+		System.out.println("multiDimensionalArray1: " + Arrays.deepToString(multiDimensionalArray1));
+		System.out.println("multiDimensionalArray2: " + Arrays.deepToString(multiDimensionalArray2));
+		
+		// deepEquals to compare multi dimensional arrays
+		System.out.println("multiDimensionalArray1 == multiDimensionalArray2: " + Arrays.deepEquals(multiDimensionalArray1, multiDimensionalArray2));
+		
 		/** Sorting **/
 		System.out.println("Sorting");
 		Integer[] unsortedArray = new Integer[10];
