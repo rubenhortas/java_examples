@@ -22,7 +22,7 @@ public class ListsExample {
 		
 		// Insert some elements
 		heroes.add("Batman");
-		heroes.add("Greenn Lantern");
+		heroes.add("Green Lantern");
 		heroes.add("Hulk");
 		heroes.add("Thor");
 		System.out.println("Heroes list: " + heroes);
@@ -54,5 +54,14 @@ public class ListsExample {
 		// Replace an element
 		listToRemove.set(2, "Superman");
 		System.out.println("listToRemove: " + listToRemove);
+		System.out.println();
+		
+		// Contains
+		System.out.println("Avengers contains Hulk = " + avengers.contains("Hulk"));
+		System.out.println();
+		
+		// Get
+		System.out.println("Avengers.get(1): " + avengers.get(1));
+		System.out.println();
 	}
 }
