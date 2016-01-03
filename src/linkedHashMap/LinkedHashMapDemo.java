@@ -9,7 +9,7 @@
  * @file:    LinkedHashMapDemo.java
  */
 
-package LinkedHashMap;
+package linkedHashMap;
 
 import java.util.LinkedHashMap;
 
