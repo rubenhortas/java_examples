@@ -43,7 +43,7 @@ public class JExEnum {
 	 * Example of switch usage with default enums.
 	 */
 	private static void defaultEnumSwitch() {
-		// Asign a value to the local variable myEnumValue
+		// Assign a value to the local variable myEnumValue
 		DefaultEnum myEnumValue = DefaultEnum.ONE;
 
 		switch (myEnumValue) {
