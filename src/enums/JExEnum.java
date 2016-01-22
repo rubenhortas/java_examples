@@ -23,6 +23,9 @@ public class JExEnum {
 
 		// Example of using a custom enum (with assigned values)
 		customEnumEx();
+		
+		// Print an enum info
+		printEnum();
 	}
 
 	/**
@@ -62,8 +65,20 @@ public class JExEnum {
 	private static void customEnumEx() {
 		int myValue = 2;
 
-		if (myValue == CustomEnum.TWO.getEnumValue()) {
+		if (myValue == CustomEnum.TWO.getValue()) {
 			System.out.println("Ok, myValue is equal to CustomEnum.TWO value");
+		}
+	}
+	
+	private static void printEnum() {
+		System.out.println("Printing enum info");
+		
+		for(CustomEnum customEnum : CustomEnum.values()) {
+			System.out.println("\tName: " + customEnum.name());
+			System.out.println("\tOrdinal: " + customEnum.ordinal());
+			System.out.println("\tValue: " + customEnum.getValue());
+			System.out.println("\tDeclaring class: " + customEnum.getDeclaringClass());
+			System.out.println();
 		}
 	}
 }
