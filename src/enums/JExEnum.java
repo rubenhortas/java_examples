@@ -30,7 +30,7 @@ public class JExEnum {
 	 */
 	private static void defaultEnumEx() {
 
-		// Asign a value to the local variable myEnumValue
+		// Assign a value to the local variable myEnumValue
 		DefaultEnum myEnumValue = DefaultEnum.ONE;
 
 		// Example of comparison
