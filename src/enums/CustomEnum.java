@@ -26,7 +26,7 @@ public enum CustomEnum {
 		this.enumValue = value;
 	}
 	
-	public int getEnumValue() {
+	public int getValue() {
 		return this.enumValue;
 	}
 }
