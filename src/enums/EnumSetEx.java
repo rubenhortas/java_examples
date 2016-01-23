@@ -13,6 +13,7 @@ package enums;
 
 import java.util.EnumSet;
 
+/* Use EnumSet instead of flags */
 public class EnumSetEx {
 	public static void main(String[] args) {
 		// Empty set
