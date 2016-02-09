@@ -30,5 +30,10 @@ public class EnumSetEx {
 		// Adding all
 		cupboard = EnumSet.allOf(Food.class);
 		System.out.println(cupboard);
+		
+		// Since it's a set it will only hold one of each item.
+		// Duplicate calls  to add() with the same argument are ignored.
+		cupboard.add(Food.CANDIES);
+		System.out.println(cupboard);
 	}
 }
