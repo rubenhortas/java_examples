@@ -38,7 +38,7 @@ public class ArrayExamples {
 
 		/** Initialization **/
 		System.out.println("Initialization");
-		Integer[] a; // Local unitialized variable
+		Integer[] a; // Local uninitialized variable
 		
 		Integer[] b = new Integer[5]; // Initialized to point to an array
 		// The references inside the array are automatically initialized to null
