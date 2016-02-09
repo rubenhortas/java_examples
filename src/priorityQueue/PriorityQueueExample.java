@@ -28,7 +28,7 @@ public class PriorityQueueExample {
 	}
 	
 	/*
-	 *  A priority queue says that the element that goes nex is the one with
+	 *  A priority queue says that the element that goes next is the one with
 	 *  the highest priority.
 	 *  
 	 *  You can modify the order by providing your own Comparator.
