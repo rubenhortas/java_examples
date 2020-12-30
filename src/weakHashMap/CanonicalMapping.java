@@ -3,7 +3,7 @@ package weakHashMap;
 import java.util.WeakHashMap;
 
 /**
- * WeakHashMap is a class designed to make the creation of canonicalized mappings easier.
+ * WeakHashMap is a class designed to make the creation of canonicalize mappings easier.
  * In such a mapping, you are saving storage by creating only one instance of a particular value.
  * When the program needs that value, it looks up the existing object in the mapping and uses that.
  * 
