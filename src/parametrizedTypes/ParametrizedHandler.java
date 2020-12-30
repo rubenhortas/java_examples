@@ -8,6 +8,7 @@ public class ParametrizedHandler<T> {
         this.t = t;
     }
 
+    @SuppressWarnings("UnusedReturnValue")
     public T get() {
         System.out.println(this.t.getClass().getName());
         return this.t;
