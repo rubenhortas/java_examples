@@ -20,6 +20,7 @@ public class Element {
                 identity.equals(((Element) r).identity);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     protected void finalize() {
         System.out.println("Finalizing " + getClass().getSimpleName() + " " + identity);
