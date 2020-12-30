@@ -82,7 +82,7 @@ public class ArrayExample {
             }
         }
 
-        // deepToSTring to print multi dimensional arrays
+        // deepToString to print multi dimensional arrays
         System.out.println("multiDimensionalArray1: " + Arrays.deepToString(multiDimensionalArray1));
         System.out.println("multiDimensionalArray2: " + Arrays.deepToString(multiDimensionalArray2));
 
