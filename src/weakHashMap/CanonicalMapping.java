@@ -11,6 +11,7 @@ import java.util.WeakHashMap;
  *
  */
 public class CanonicalMapping {
+	@SuppressWarnings({"MismatchedReadAndWriteOfArray", "MismatchedQueryAndUpdateOfCollection"})
 	public static void main(String[] args) {
 		int size = 1000;
 		Key[] keys = new Key[size];
