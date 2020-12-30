@@ -8,7 +8,7 @@ import java.util.Stack;
 public class StackExample {
     public static void main(String[] args) {
         // Item class from Iterator example
-        Stack<Item> stack = new Stack<Item>();
+        Stack<Item> stack = new Stack<>();
         List<Item> items = Item.arrayList(10);
 
         for (Item item : items) {
