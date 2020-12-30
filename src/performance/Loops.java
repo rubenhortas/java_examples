@@ -3,12 +3,13 @@ package performance;
 public class Loops {
     static int iterations = 100000000;
 
+    @SuppressWarnings("UnusedAssignment")
     public static void main(String[] args) {
         long t1 = System.nanoTime();
 
         for (int i = 0; i < iterations; i++) {
             @SuppressWarnings("unused")
-            String s1 = "aaaaaaa";
+            String s1 = "someString";
         }
 
         long t2 = System.nanoTime();
@@ -21,7 +22,7 @@ public class Loops {
         String s2;
 
         for (int i = 0; i < iterations; i++) {
-            s2 = "aaaaaaa";
+            s2 = "someString";
         }
 
         long t4 = System.nanoTime();
