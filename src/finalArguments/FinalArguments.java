@@ -1,6 +1,7 @@
 package finalArguments;
 
 public class FinalArguments {
+    @SuppressWarnings("SameParameterValue")
     void withFinalArguments(final MyClass mc) {
 
         /*
@@ -10,6 +11,7 @@ public class FinalArguments {
         //mc = new MyClass(); // illegal, mc is final
     }
 
+    @SuppressWarnings({"SameParameterValue", "ParameterCanBeLocal"})
     void withoutFinalArguments(MyClass mc) {
         mc = new MyClass(); // mc not final
         mc.doSomething();
