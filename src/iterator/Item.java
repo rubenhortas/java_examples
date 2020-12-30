@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Item {
-    public Integer number;
-    public String description;
+    public final Integer number;
+    public final String description;
 
     public Item(Integer number) {
         this.number = number;

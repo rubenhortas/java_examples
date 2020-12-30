@@ -1,6 +1,6 @@
 package extendInterfacesWithInheritance;
 
 public interface IJamesBondCar extends ICar {
-    @SuppressWarnings("unused")
+    @SuppressWarnings({"unused", "EmptyMethod"})
     void shoot();
 }

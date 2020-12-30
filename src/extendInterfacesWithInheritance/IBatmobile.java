@@ -1,6 +1,6 @@
 package extendInterfacesWithInheritance;
 
 public interface IBatmobile extends IJamesBondCar {
-    @SuppressWarnings("unused")
+    @SuppressWarnings({"unused", "EmptyMethod"})
     void startJetEngine();
 }

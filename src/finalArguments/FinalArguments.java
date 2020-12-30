@@ -1,7 +1,7 @@
 package finalArguments;
 
 public class FinalArguments {
-    @SuppressWarnings("SameParameterValue")
+    @SuppressWarnings({"SameParameterValue", "EmptyMethod", "unused"})
     void withFinalArguments(final MyClass mc) {
 
         /*

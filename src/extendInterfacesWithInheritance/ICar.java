@@ -1,6 +1,6 @@
 package extendInterfacesWithInheritance;
 
 public interface ICar {
-    @SuppressWarnings("unused")
+    @SuppressWarnings({"unused", "EmptyMethod"})
     void run();
 }

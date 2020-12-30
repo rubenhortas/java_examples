@@ -1,7 +1,7 @@
 package performance;
 
 public class Loops {
-    static int iterations = 100000000;
+    static final int iterations = 100000000;
 
     @SuppressWarnings("UnusedAssignment")
     public static void main(String[] args) {

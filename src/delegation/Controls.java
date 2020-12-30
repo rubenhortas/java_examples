@@ -1,6 +1,6 @@
 package delegation;
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "EmptyMethod"})
 public class Controls {
     void up(int velocity) {
     }
