@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class HashMapExample {
+    @SuppressWarnings("Java8MapApi")
     public static void main(String[] args) {
         Random random = new Random(47);
         Map<Integer, Integer> intMap = new HashMap<>();
