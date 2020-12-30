@@ -17,7 +17,7 @@ public class ListsExample {
 
         // Insert at an index
         heroes.add(0, "Spiderman");
-        System.out.println("List after add \"Spiderman\" at 0 postition: " + heroes);
+        System.out.println("List after add \"Spiderman\" at 0 position: " + heroes);
         System.out.println();
 
         // Sublists
