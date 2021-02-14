@@ -9,6 +9,7 @@ public class ArrayExample {
     public static void main(String[] args) {
         // Arrays vs Lists
         // Arrays are more efficient, but lists automatically allocates more space.
+        System.out.println("\nArrays vs Lists");
         Integer[] arrayOfIntegers = new Integer[10];
 
         for (int i = 0; i < 10; i++) {
@@ -28,7 +29,7 @@ public class ArrayExample {
         System.out.println(listOfIntegers);
 
         // Initialization
-        System.out.println("Initialization");
+        System.out.println("\nInitialization");
         Integer[] a; // Local uninitialized variable
 
         Integer[] b = new Integer[5]; // Initialized to point to an array
@@ -47,13 +48,13 @@ public class ArrayExample {
         System.out.println(Arrays.toString(d));
 
         // Fill
-        System.out.println("Fill");
+        System.out.println("\nFill");
         int[] arrayToFill = new int[20];
         Arrays.fill(arrayToFill, 1);
         System.out.println(Arrays.toString(arrayToFill));
 
         // Copy
-        System.out.println("Copy");
+        System.out.println("\nCopy");
         Integer[] originalArray = new Integer[10];
         Integer[] copyArray = new Integer[10];
 
@@ -69,7 +70,7 @@ public class ArrayExample {
         System.out.println(Arrays.toString(copyArray));
 
         // Comparison
-        System.out.println("Comparison");
+        System.out.println("\nComparison");
         System.out.println("originalArray == copyArray:" + Arrays.equals(originalArray, copyArray));
 
         Integer[][] multiDimensionalArray1 = new Integer[5][5];
@@ -90,7 +91,7 @@ public class ArrayExample {
         System.out.println("multiDimensionalArray1 == multiDimensionalArray2: " + Arrays.deepEquals(multiDimensionalArray1, multiDimensionalArray2));
 
         // Sorting
-        System.out.println("Sorting");
+        System.out.println("\nSorting");
         Integer[] unsortedArray = new Integer[10];
         for (int i = 0; i < 10; i++) {
             unsortedArray[i] = (unsortedArray.length - i);
@@ -104,7 +105,21 @@ public class ArrayExample {
         // Binary search
         // Only for sorted arrays
         int position = Arrays.binarySearch(unsortedArray, 8);
-        System.out.println("Binary search");
+        System.out.println("\nBinary search");
         System.out.println("Position of 8 in unsortedArray (after sort): " + position);
+
+        //Conversion
+        String[] stringArray;
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("string1");
+        arrayList.add("string2");
+        stringArray = arrayList.toArray(new String[0]);
+        // The toArray() method without passing any argument returns Object[]. So you have to pass an array
+        // as an argument, which will be filled with the data from the list, and returned
+        // Due to JVM optimizations, using new String[0] is better than new String[list.size()]
+        // https://shipilev.net/blog/2016/arrays-wisdom-ancients/
+        System.out.println("\nConversion: ArrayList<String> to String[]");
+        System.out.println(arrayList);
+        System.out.println(Arrays.toString(stringArray));
     }
 }
