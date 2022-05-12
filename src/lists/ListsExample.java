@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListsExample {
+    @SuppressWarnings("SlowListContainsAll")
     public static void main(String[] args) {
         List<String> heroes = new ArrayList<>();
 

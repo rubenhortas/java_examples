@@ -44,6 +44,7 @@ public class ArrayExample {
         a = new Integer[]{3, 4, 5};
         System.out.println(Arrays.toString(a));
 
+        //noinspection GrazieInspection
         d = a; //Now d and a are pointing to the same array
         System.out.println(Arrays.toString(d));
 

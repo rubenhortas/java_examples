@@ -6,7 +6,7 @@ package multipleInheritance;
  * You can have as many interfaces as you want. You can upcast to each
  * interface.
  */
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused", "GrazieInspection"})
 public class AmphibiousVehicle implements ICar, IShip {
     @Override
     public void canFloat() {

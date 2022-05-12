@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * Java enums have a very interesting feature that allows you to give
  * each enum instance different behavior by creating methods for each one.
- * To do this, you define one ore more abstract methods as part of the enum,
+ * To do this, you define one or more abstract methods as part of the enum,
  * then define the methods for each enum instance.
  * Example extracted from the Bruce Eckel's book Thinking in java.
  */

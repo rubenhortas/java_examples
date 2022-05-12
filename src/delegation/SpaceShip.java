@@ -14,6 +14,7 @@ public class SpaceShip {
 
     // Delegation methods
     // Methods are forwarded to the underlying controls object
+    @SuppressWarnings("GrazieInspection")
     public void up(int velocity) {
         controls.up(velocity);
     }
