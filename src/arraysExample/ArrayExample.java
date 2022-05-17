@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ArrayExample {
     @SuppressWarnings("MismatchedReadAndWriteOfArray")
+
     public static void main(String[] args) {
         // Arrays vs Lists
         // Arrays are more efficient, but lists automatically allocates more space.
