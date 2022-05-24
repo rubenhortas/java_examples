@@ -6,7 +6,7 @@ package delegation;
  */
 @SuppressWarnings("unused")
 public class SpaceShip {
-    private final Controls controls = new Controls();
+    private final Control control = new Control();
 
     // Constructor
     public SpaceShip(String name) {
@@ -16,27 +16,27 @@ public class SpaceShip {
     // Methods are forwarded to the underlying controls object
     @SuppressWarnings("GrazieInspection")
     public void up(int velocity) {
-        controls.up(velocity);
+        control.up(velocity);
     }
 
     public void down(int velocity) {
-        controls.down(velocity);
+        control.down(velocity);
     }
 
     public void right(int velocity) {
-        controls.right(velocity);
+        control.right(velocity);
     }
 
     public void left(int velocity) {
-        controls.left(velocity);
+        control.left(velocity);
     }
 
     public void forward(int velocity) {
-        controls.forward(velocity);
+        control.forward(velocity);
     }
 
     public void back(int velocity) {
-        controls.back(velocity);
+        control.back(velocity);
     }
 }
 
