@@ -12,26 +12,32 @@ Screaming Snake Case style
 * Single line comment  
   Used to comment only one line of the code  
   
-  **// comment**  
+  ```java
+  // comment
+  ```
 
 * Multi line comment  
   Used to comment multiple lines of code.  
   Used when it's difficult to use single line comment.  
     
-  __/*
+  ```java
+  /*
   A
   multi line
   comment
-  */__  
+  */
+  ```
   
 * Java Documentation comment
   Used to create documentation API.  
   To create documentation API the javadoc tool is needed.
 
-  __/**
+  ```java
+  /**
   * This is a explanation
   * for the documentation API
-  */__
+  */
+  ```
 
 # Class
 Upper Camel Case (or Pascal Case) style
