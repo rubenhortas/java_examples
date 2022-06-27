@@ -34,7 +34,7 @@ Screaming Snake Case style
 
   ```java
   /**
-  * This is a explanation
+  * This is an explanation
   * for the documentation API
   */
   ```
