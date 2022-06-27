@@ -39,5 +39,3 @@ public class SpaceShip {
         control.back(velocity);
     }
 }
-
-

@@ -20,5 +20,3 @@ public class Control {
     void back(int velocity) {
     }
 }
-
-
