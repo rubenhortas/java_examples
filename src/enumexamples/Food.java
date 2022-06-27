@@ -1,0 +1,10 @@
+package enumexamples;
+
+@SuppressWarnings("unused")
+public enum Food {
+    CHIPS,
+    POPCORN,
+    CORN,
+    CHOCOLATE,
+    CANDIES
+}
