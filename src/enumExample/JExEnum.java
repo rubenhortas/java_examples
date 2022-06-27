@@ -15,9 +15,7 @@ public class JExEnum {
         printEnum();
     }
 
-    /**
-     * Example of value assignment and comparison of an enum
-     */
+    // Example of value assignment and comparison of an enum
     @SuppressWarnings("ConstantConditions")
     private static void defaultEnumEx() {
 
@@ -30,9 +28,7 @@ public class JExEnum {
         }
     }
 
-    /**
-     * Example of switch usage with default enums.
-     */
+    // Example of switch usage with default enums.
     @SuppressWarnings({"SwitchStatementWithTooFewBranches", "ConstantConditions", "EnhancedSwitchMigration"})
     private static void defaultEnumSwitch() {
         // Assign a value to the local variable myEnumValue
@@ -48,9 +44,7 @@ public class JExEnum {
         }
     }
 
-    /**
-     * Example of value comparison of a custom enum (with assigned values)
-     */
+    // Example of value comparison of a custom enum (with assigned values)
     private static void customEnumEx() {
         int myValue = 2;
 

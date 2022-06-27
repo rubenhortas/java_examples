@@ -1,9 +1,7 @@
 package delegation;
 
-/**
- * A third relationship, which is not supported by Java, is called delegation.
- * This is midway between inheritance and composition.
- */
+/* A third relationship, which is not supported by Java, is called delegation.
+   This is midway between inheritance and composition. */
 @SuppressWarnings("unused")
 public class SpaceShip {
     private final Control control = new Control();

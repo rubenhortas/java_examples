@@ -1,9 +1,7 @@
 package enumExample;
 
 public class ImplementationExample {
-    /**
-     * An enum can implement one or more interfaces.
-     */
+    // An enum can implement one or more interfaces.
     @SuppressWarnings("unused")
     private enum StupidEnum implements StupidInterface {
         RALPH, LISA, BART;

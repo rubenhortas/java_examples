@@ -2,7 +2,7 @@ package enumExample;
 
 import java.util.EnumSet;
 
-/* Use EnumSet instead of flags */
+// Use EnumSet instead of flags
 public class EnumSetExample {
     public static void main(String[] args) {
         // Empty set

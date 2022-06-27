@@ -1,11 +1,9 @@
 package multipleInheritance;
 
-/**
- * In Java you can do Multiple Inheritance implementing interfaces. If you do
- * inherit from a non-interface, you can inherit from only one.
- * You can have as many interfaces as you want. You can upcast to each
- * interface.
- */
+/* In Java you can do Multiple Inheritance implementing interfaces. If you do
+   inherit from a non-interface, you can inherit from only one.
+   You can have as many interfaces as you want. You can upcast to each
+   interface. */
 @SuppressWarnings({"unused", "GrazieInspection"})
 public class AmphibiousVehicle implements ICar, IShip {
     @Override

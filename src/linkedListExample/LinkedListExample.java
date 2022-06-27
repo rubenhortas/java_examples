@@ -4,11 +4,9 @@ import java.util.LinkedList;
 
 import iterator.Item;
 
-/**
- * LinkedList implements List interface like ArrayList, but performs
- * insertion and removal in the middle of the list more efficiently than
- * ArrayList. It's less efficient for random-access operations.
- */
+/* LinkedList implements List interface like ArrayList, but performs
+   insertion and removal in the middle of the list more efficiently than
+   ArrayList. It's less efficient for random-access operations. */
 public class LinkedListExample {
     public static void main(String[] args) {
         LinkedList<Item> items = new LinkedList<>(Item.arrayList(10));

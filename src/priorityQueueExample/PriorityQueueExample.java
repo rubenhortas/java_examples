@@ -14,12 +14,9 @@ public class PriorityQueueExample {
         System.out.println();
     }
 
-    /*
-     *  A priority queue says that the element that goes next is the one with
-     *  the highest priority.
-     *
-     *  You can modify the order by providing your own Comparator.
-     */
+    /* A priority queue says that the element that goes next is the one with
+       the highest priority.
+       You can modify the order by providing your own Comparator. */
     public static void main(String[] args) {
         PriorityQueue<Integer> priorityQueue;
         List<Integer> intList = new ArrayList<>();

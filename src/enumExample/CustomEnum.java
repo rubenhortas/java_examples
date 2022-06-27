@@ -1,8 +1,6 @@
 package enumExample;
 
-/**
- * Example of enum with assigned values.
- */
+// Example of enum with assigned values.
 public enum CustomEnum {
     ONE(1),
     TWO(2),

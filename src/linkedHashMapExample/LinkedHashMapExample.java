@@ -3,14 +3,12 @@ package linkedHashMapExample;
 import java.util.LinkedHashMap;
 
 public class LinkedHashMapExample {
-    /**
-     * LinkedHashMap can be configured in the constructor to use
-     * a least-recently-used (LRU) algorithm based on accesses,
-     * so elements that haven't been accessed (and thus are
-     * candidates to removal) appear at the front of the list.
-     * This allows easy creation of programs that do periodic
-     * cleanup in order to save space.
-     */
+    /* LinkedHashMap can be configured in the constructor to use
+       a least-recently-used (LRU) algorithm based on accesses,
+       so elements that haven't been accessed (and thus are
+       candidates to removal) appear at the front of the list.
+       This allows easy creation of programs that do periodic
+       cleanup in order to save space. */
     public static void main(String[] args) {
         LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
 

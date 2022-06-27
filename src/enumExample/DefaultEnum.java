@@ -1,8 +1,6 @@
 package enumExample;
 
-/**
- * Example of default enum.
- */
+// Example of default enum.
 @SuppressWarnings("unused")
 public enum DefaultEnum {
     ONE,

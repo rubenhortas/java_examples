@@ -4,9 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class DequeExample {
-    /**
-     * A Deque (double ended queue) is like a queue, but you can add and remove elements from either end.
-     */
+    // A Deque (double ended queue) is like a queue, but you can add and remove elements from either end.
     public static void main(String[] args) {
         Deque<String> deque = new ArrayDeque<>();
 
