@@ -21,11 +21,8 @@ Screaming Snake Case style
   Used when it's difficult to use single line comment.  
     
   ```java
-  /*
-  A
-  multi line
-  comment
-  */
+  /* A multi line
+  comment */
   ```
   
 * Java Documentation comment
