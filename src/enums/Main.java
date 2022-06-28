@@ -1,23 +1,23 @@
 package enums;
 
-public class JExEnum {
+public class Main {
     public static void main(String[] args) {
         // Example of using a default enum
-        defaultEnumEx();
+        compareDefaultEnum();
 
         // Example of switch usage with default enums
-        defaultEnumSwitch();
+        compareDefaultEnumWithSwitch();
 
         // Example of using a custom enum (with assigned values)
-        customEnumEx();
+        compareCustomEnum();
 
         // Print an enum info
-        printEnum();
+        printCustomEnum();
     }
 
     // Example of value assignment and comparison of an enum
     @SuppressWarnings("ConstantConditions")
-    private static void defaultEnumEx() {
+    private static void compareDefaultEnum() {
 
         // Assign a value to the local variable myEnumValue
         DefaultEnum myEnumValue = DefaultEnum.ONE;
@@ -30,7 +30,7 @@ public class JExEnum {
 
     // Example of switch usage with default enums.
     @SuppressWarnings({"SwitchStatementWithTooFewBranches", "ConstantConditions", "EnhancedSwitchMigration"})
-    private static void defaultEnumSwitch() {
+    private static void compareDefaultEnumWithSwitch() {
         // Assign a value to the local variable myEnumValue
         DefaultEnum myEnumValue = DefaultEnum.ONE;
 
@@ -45,7 +45,7 @@ public class JExEnum {
     }
 
     // Example of value comparison of a custom enum (with assigned values)
-    private static void customEnumEx() {
+    private static void compareCustomEnum() {
         int myValue = 2;
 
         if (myValue == CustomEnum.TWO.getValue()) {
@@ -53,7 +53,7 @@ public class JExEnum {
         }
     }
 
-    private static void printEnum() {
+    private static void printCustomEnum() {
         System.out.println("Printing enum info");
 
         for (CustomEnum customEnum : CustomEnum.values()) {

@@ -1,4 +1,4 @@
-package loops.loopsperformance;
+package loops.performance;
 
 public class LoopsPerformance {
     static final int iterations = 100000000;
