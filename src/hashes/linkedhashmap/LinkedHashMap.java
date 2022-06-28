@@ -1,4 +1,4 @@
-package linkedhashmap;
+package hashes.linkedhashmap;
 
 public class LinkedHashMap {
     /* LinkedHashMap can be configured in the constructor to use

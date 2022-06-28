@@ -1,4 +1,4 @@
-package weakhashmap;
+package hashes.weakhashmap;
 
 public class Element {
     private final String identity;
