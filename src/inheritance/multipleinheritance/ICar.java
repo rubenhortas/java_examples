@@ -1,4 +1,4 @@
-package multipleinheritance;
+package inheritance.multipleinheritance;
 
 public interface ICar {
     @SuppressWarnings("unused")

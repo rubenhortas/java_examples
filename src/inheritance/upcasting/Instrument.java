@@ -1,4 +1,4 @@
-package upcasting;
+package inheritance.upcasting;
 
 public class Instrument {
 	public void play() {
