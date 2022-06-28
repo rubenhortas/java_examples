@@ -1,4 +1,4 @@
-package loops.performance;
+package loopsperformance;
 
 public class LoopsPerformance {
     static final int iterations = 100000000;
@@ -15,8 +15,6 @@ public class LoopsPerformance {
         long t2 = System.nanoTime();
         long total1 = (t2 - t1);
 
-        // ------------------------------ //
-
         long t3 = System.nanoTime();
         @SuppressWarnings("unused")
         String s2;
@@ -28,9 +26,8 @@ public class LoopsPerformance {
         long t4 = System.nanoTime();
         long total2 = (t4 - t3);
 
-        // ------------------------------ //
         System.out.println("Iterations: " + iterations);
-        System.out.println("Time method 1: " + total1);
+        System.out.println("Time method 1: " + total1); // About 2 times slower in my tests
         System.out.println("Time method 2: " + total2);
     }
 }

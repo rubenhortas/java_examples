@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 import java.text.DateFormat;
 import java.util.Date;

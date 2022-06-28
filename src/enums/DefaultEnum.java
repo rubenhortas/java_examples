@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 // Example of default enum.
 @SuppressWarnings("unused")

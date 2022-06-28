@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 public class JExEnum {
     public static void main(String[] args) {

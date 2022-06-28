@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 @SuppressWarnings("unused")
 public enum Food {

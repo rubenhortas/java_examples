@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 // Example of enum with assigned values.
 public enum CustomEnum {

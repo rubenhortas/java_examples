@@ -1,6 +1,6 @@
-package enumexamples;
+package enums;
 
-import static enumexamples.CustomEnum.*;
+import static enums.CustomEnum.*;
 
 public class StaticImportExample {
     public static void main(String[] args) {

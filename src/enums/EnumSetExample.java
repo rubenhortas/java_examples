@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 import java.util.EnumSet;
 

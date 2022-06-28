@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 public class ImplementationExample {
     // An enum can implement one or more interfaces.

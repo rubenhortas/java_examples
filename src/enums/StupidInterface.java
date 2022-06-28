@@ -1,4 +1,4 @@
-package enumexamples;
+package enums;
 
 public interface StupidInterface {
     @SuppressWarnings("unused")
