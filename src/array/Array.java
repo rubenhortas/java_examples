@@ -116,8 +116,8 @@ public class Array {
         arrayList.add("string2");
         stringArray = arrayList.toArray(new String[0]);
         // The toArray() method without passing any argument returns Object[]. So you have to pass an array
-        // as an argument, which will be filled with the data from the list, and returned
-        // Due to JVM optimizations, using new String[0] is better than new String[list.size()]
+        // as an argument, which will be filled with the data from the lists.list, and returned
+        // Due to JVM optimizations, using new String[0] is better than new String[lists.list.size()]
         // https://shipilev.net/blog/2016/arrays-wisdom-ancients/
         System.out.println("\nConversion: ArrayList<String> to String[]");
         System.out.println(arrayList);

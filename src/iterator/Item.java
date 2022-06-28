@@ -12,7 +12,7 @@ public class Item {
         this.description = String.format("Item %02d", number);
     }
 
-    // Returns an array list of n Item elements.
+    // Returns an array lists.list of n Item elements.
     public static List<Item> arrayList(int n) {
         List<Item> itemList = new ArrayList<>(n);
 

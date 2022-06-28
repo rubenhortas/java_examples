@@ -1,9 +1,9 @@
-package linkedlist;
+package lists.linkedlist;
 
 import iterator.Item;
 
 /* LinkedList implements List interface like ArrayList, but performs
-   insertion and removal in the middle of the list more efficiently than
+   insertion and removal in the middle of the lists.list more efficiently than
    ArrayList. It's less efficient for random-access operations. */
 public class LinkedList {
     public static void main(String[] args) {

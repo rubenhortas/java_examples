@@ -1,4 +1,4 @@
-package list;
+package lists.list;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public class List {
         heroes.add("Green Lantern");
         heroes.add("Hulk");
         heroes.add("Thor");
-        System.out.println("Heroes list: " + heroes);
+        System.out.println("Heroes lists.list: " + heroes);
         System.out.println();
 
         // Insert at an index
@@ -22,19 +22,19 @@ public class List {
 
         // Sublists
         java.util.List<String> avengers = heroes.subList(3, 5);
-        System.out.println("Heroes list contains avengers: " + heroes.containsAll(avengers));
+        System.out.println("Heroes lists.list contains avengers: " + heroes.containsAll(avengers));
         System.out.println();
 
         // Copy
         java.util.List<String> copyList = new ArrayList<>(heroes); // Fresh copy
-        System.out.println("Copy list: " + copyList);
+        System.out.println("Copy lists.list: " + copyList);
         System.out.println();
 
         // Remove
         java.util.List<String> listToRemove = new ArrayList<>(heroes.subList(0, 3));
-        System.out.println("listToRemove list: " + listToRemove);
+        System.out.println("listToRemove lists.list: " + listToRemove);
         listToRemove.removeAll(avengers); // Removes EXACT objects
-        System.out.println("listToRemove list without avengers: " + listToRemove);
+        System.out.println("listToRemove lists.list without avengers: " + listToRemove);
         System.out.println();
 
         // Replace an element
