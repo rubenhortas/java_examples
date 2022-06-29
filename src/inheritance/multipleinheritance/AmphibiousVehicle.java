@@ -15,5 +15,4 @@ public class AmphibiousVehicle implements ICar, IShip {
     public void canRun() {
         System.out.println("I can run");
     }
-
 }

@@ -10,6 +10,7 @@ public class PriorityQueue {
         while (q.peek() != null) {
             System.out.print(q.remove() + " ");
         }
+
         System.out.println();
     }
 

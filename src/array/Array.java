@@ -94,9 +94,11 @@ public class Array {
         // Sorting
         System.out.println("\nSorting");
         Integer[] unsortedArray = new Integer[10];
+
         for (int i = 0; i < 10; i++) {
             unsortedArray[i] = (unsortedArray.length - i);
         }
+
         System.out.println(Arrays.toString(unsortedArray));
 
         Arrays.sort(unsortedArray); // Quicksort for primitives, Merge sort for objects
@@ -106,10 +108,11 @@ public class Array {
         // Binary search
         // Only for sorted arrays
         int position = Arrays.binarySearch(unsortedArray, 8);
+
         System.out.println("\nBinary search");
         System.out.println("Position of 8 in unsortedArray (after sort): " + position);
 
-        //Conversion
+        // Conversion
         String[] stringArray;
         ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("string1");

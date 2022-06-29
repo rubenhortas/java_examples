@@ -1,6 +1,6 @@
 package delegation;
 
-/* Delegation is midway between inheritance and composition. */
+// Delegation is midway between inheritance and composition.
 @SuppressWarnings("unused")
 public class SpaceShip {
     private final Control control = new Control();
