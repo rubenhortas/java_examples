@@ -1,4 +1,4 @@
-package hashes.weakhashmap;
+package hash.weakhashmap;
 
 public class Element {
     private final String identity;
@@ -20,7 +20,7 @@ public class Element {
                 identity.equals(((Element) r).identity);
     }
 
-    @SuppressWarnings("deprecation")
+    @SuppressWarnings("removal")
     @Override
     protected void finalize() {
         System.out.println("Finalizing " + getClass().getSimpleName() + " " + identity);

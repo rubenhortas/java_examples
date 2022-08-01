@@ -1,4 +1,4 @@
-package hashes.hashset;
+package hash.hashset;
 
 import java.util.Random;
 import java.util.Set;

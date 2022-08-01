@@ -1,4 +1,4 @@
-package hashes.weakhashmap;
+package hash.weakhashmap;
 
 public class Value extends Element {
     public Value(String id) {

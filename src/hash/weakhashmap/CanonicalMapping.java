@@ -1,4 +1,4 @@
-package hashes.weakhashmap;
+package hash.weakhashmap;
 
 import java.util.WeakHashMap;
 

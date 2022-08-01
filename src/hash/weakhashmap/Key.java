@@ -1,4 +1,4 @@
-package hashes.weakhashmap;
+package hash.weakhashmap;
 
 public class Key extends Element {
     public Key(String id) {
