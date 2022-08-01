@@ -1,4 +1,4 @@
-package inheritance.multipleinheritance;
+package inheritance.multiple;
 
 /* In Java you can do Multiple Inheritance implementing interfaces. If you do
    inherit from a non-interface, you can inherit from only one.

@@ -1,4 +1,4 @@
-package inheritance.multipleinheritance;
+package inheritance.multiple;
 
 public interface IShip {
     @SuppressWarnings("unused")
