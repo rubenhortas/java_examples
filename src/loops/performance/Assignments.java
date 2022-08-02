@@ -3,7 +3,7 @@ package loops.performance;
 import java.time.Duration;
 import java.time.Instant;
 
-public class DeclarationsPerformance {
+public class Assignments {
     private static final int ITERATIONS = 1000000000;
 
     public static void main(String[] args) {
