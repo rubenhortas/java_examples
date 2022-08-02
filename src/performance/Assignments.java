@@ -12,7 +12,7 @@ public class Assignments {
         Instant finish;
         long time;
 
-        System.out.printf("%d iterations\n", ITERATIONS);
+        System.out.printf("Running %d iterations\n", ITERATIONS);
 
         start = Instant.now();
         assignInsideTheLoop();
@@ -20,6 +20,7 @@ public class Assignments {
         time = Duration.between(start, finish).toSeconds();
         System.out.printf("Assigning the variable inside the loop: %d seconds.\n", time);
 
+        // Assigning the variable outside the loop is slightly faster.
         start = Instant.now();
         assignOutsideTheLoop();
         finish = Instant.now();
