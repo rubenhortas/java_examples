@@ -22,15 +22,19 @@ public class Foreach {
     }};
 
     public static void main(String[] args) {
+        System.out.print("Electronic devices:");
+
         for (String device : ELECTRONIC_DEVICES) {
-            System.out.println(device);
+            System.out.print(" " + device);
         }
 
         System.out.println();
 
         // Foreach also works with any Collection object
-        for (String str : MATRIX_MESSAGE) {
-            System.out.print("'" + str + "' ");
+        System.out.print("Wake up, NEO.");
+
+        for (String word : MATRIX_MESSAGE) {
+            System.out.print(" " + word);
         }
     }
 }
