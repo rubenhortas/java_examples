@@ -1,4 +1,4 @@
-package classes.interfaces.extendwithinheritance;
+package classes.interfaces.extendclasses;
 
 public interface ICar {
     @SuppressWarnings({"unused", "EmptyMethod"})
