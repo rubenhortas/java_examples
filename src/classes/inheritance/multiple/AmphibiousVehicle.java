@@ -8,11 +8,11 @@ package classes.inheritance.multiple;
 public class AmphibiousVehicle implements ICar, IShip {
     @Override
     public void canFloat() {
-        System.out.println("I can float");
+        System.out.println("I can float!");
     }
 
     @Override
     public void canRun() {
-        System.out.println("I can run");
+        System.out.println("I can run!");
     }
 }
