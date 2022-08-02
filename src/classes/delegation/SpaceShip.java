@@ -1,11 +1,10 @@
 package classes.delegation;
 
-// Delegation is midway between classes.inheritance and composition.
+// Delegation is midway between inheritance and composition.
 @SuppressWarnings("unused")
 public class SpaceShip {
     private final Control control = new Control();
 
-    // Constructor
     public SpaceShip(String name) {
     }
 
