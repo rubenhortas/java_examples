@@ -1,4 +1,4 @@
-package classes.interfaces.extendinterfaceswithinheritance;
+package classes.interfaces.extendwithinheritance;
 
 public interface IBatmobile extends IJamesBondCar {
     @SuppressWarnings({"unused", "EmptyMethod"})

@@ -1,4 +1,4 @@
-package classes.interfaces.extendinterfaceswithinheritance;
+package classes.interfaces.extendwithinheritance;
 
 @SuppressWarnings("unused")
 public class Batmobile implements IBatmobile {
