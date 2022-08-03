@@ -3,17 +3,10 @@ package types.datatypes.array;
 import java.util.Arrays;
 
 public class Multidimensional {
-    private static Integer[][] multiDimensionalArray1 = new Integer[5][5];
-    private static Integer[][] multiDimensionalArray2 = new Integer[5][5];
+    private static final Integer[][] multiDimensionalArray1 = {{0, 1, 2, 3, 4}, {5, 6, 7, 8, 9}, {10, 11, 12, 13, 14}};
+    private static final Integer[][] multiDimensionalArray2 = {{0, 1, 2, 3, 4}, {5, 6, 7, 8, 9}, {10, 11, 12, 13, 14}};
 
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                multiDimensionalArray1[i][j] = i;
-                multiDimensionalArray2[i][j] = i;
-            }
-        }
-
         print();
         compare();
     }
