@@ -13,11 +13,11 @@ public class Multidimensional {
 
     private static void print() {
         // deepToString to print multi dimensional arrays
-        System.out.println("multiDimensionalArray1: " + Arrays.deepToString(multiDimensionalArray1));
+        System.out.println("multiDimensionalArray1: ");
     }
 
     private static void compare() {
         // deepEquals to compare multi dimensional arrays
-        System.out.println("multiDimensionalArray1 == multiDimensionalArray2: " + Arrays.deepEquals(multiDimensionalArray1, multiDimensionalArray2));
+        System.out.println("(" + Arrays.deepToString(multiDimensionalArray1) + " == " + Arrays.deepToString(multiDimensionalArray2) + "): " + Arrays.deepEquals(multiDimensionalArray1, multiDimensionalArray2));
     }
 }
