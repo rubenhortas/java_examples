@@ -1,7 +1,7 @@
 package types.covariantreturntypes;
 
 public class VehicleFabric {
-    Vehicle manufacture() {
+    public Vehicle manufacture() {
         return new Vehicle();
     }
 }
