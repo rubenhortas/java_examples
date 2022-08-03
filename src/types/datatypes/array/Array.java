@@ -31,10 +31,10 @@ public class Array {
         array4 = array1; // Now array4 and array1 are pointing to the same array
 
         System.out.println("Initialization:");
-        System.out.println(Arrays.toString(array1));
-        System.out.println(Arrays.toString(array2));
-        System.out.println(Arrays.toString(array3));
-        System.out.println(Arrays.toString(array4));
+        System.out.println("\t" + Arrays.toString(array1));
+        System.out.println("\t" + Arrays.toString(array2));
+        System.out.println("\t" + Arrays.toString(array3));
+        System.out.println("\t" + Arrays.toString(array4));
     }
 
     private static void fill() {
@@ -42,8 +42,7 @@ public class Array {
 
         Arrays.fill(emptyArray, 1);
 
-        System.out.println("Fill:");
-        System.out.println(Arrays.toString(emptyArray));
+        System.out.println("Fill:" + Arrays.toString(emptyArray));
     }
 
     private static void copy() {
@@ -57,8 +56,8 @@ public class Array {
 
         System.arraycopy(array1, 0, array2, 0, array1.length);
 
-        System.out.println("array1: " + Arrays.toString(array1));
-        System.out.println("array2: " + Arrays.toString(array2));
+        System.out.println("\tarray1: " + Arrays.toString(array1));
+        System.out.println("\tarray2: " + Arrays.toString(array2));
     }
 
     private static void compare() {
@@ -75,7 +74,7 @@ public class Array {
 
         Arrays.sort(unsortedArray); // Quicksort for primitives, Merge sort for objects
 
-        System.out.println("Sorted: " + Arrays.toString(unsortedArray));
+        System.out.println("\tSorted: " + Arrays.toString(unsortedArray));
     }
 
     private static void doBinarySearch() {
@@ -84,6 +83,23 @@ public class Array {
         int position = Arrays.binarySearch(sortedArray, 8);
 
         System.out.println("Binary search: Position of 8 in sortedArray: " + position);
+    }
+
+    private static void convertArrayListToArray() {
+        String[] stringArray;
+        ArrayList<String> arrayList = new ArrayList<>();
+
+        arrayList.add("string1");
+        arrayList.add("string2");
+
+        // The toArray() method without passing any argument returns Object[].
+        // So you have to pass an array as an argument, which will be filled with the data from the list, and returned.
+        // Due to JVM optimizations using new String[0] is better than new String[lists.list.size()]
+        stringArray = arrayList.toArray(new String[0]);
+
+        System.out.println("Conversion: ArrayList<String> to String[]");
+        System.out.println("\tArraylist: " + arrayList);
+        System.out.println("\tString[]: " + Arrays.toString(stringArray));
     }
 
     private static void compareArraysAndLists() {
@@ -100,24 +116,7 @@ public class Array {
         }
 
         System.out.println("Arrays vs Lists:");
-        System.out.println("Array:" + Arrays.toString(arrayOfIntegers));
-        System.out.println("List:" + listOfIntegers);
-    }
-
-    private static void convertArrayListToArray() {
-        String[] stringArray;
-        ArrayList<String> arrayList = new ArrayList<>();
-
-        arrayList.add("string1");
-        arrayList.add("string2");
-
-        // The toArray() method without passing any argument returns Object[].
-        // So you have to pass an array as an argument, which will be filled with the data from the list, and returned.
-        // Due to JVM optimizations using new String[0] is better than new String[lists.list.size()]
-        stringArray = arrayList.toArray(new String[0]);
-
-        System.out.println("Conversion: ArrayList<String> to String[]");
-        System.out.println(arrayList);
-        System.out.println(Arrays.toString(stringArray));
+        System.out.println("\tArray:" + Arrays.toString(arrayOfIntegers));
+        System.out.println("\tList:" + listOfIntegers);
     }
 }
