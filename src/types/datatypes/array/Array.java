@@ -28,7 +28,7 @@ public class Array {
         // Dynamic aggregate initialization
         array1 = new Integer[]{3, 4, 5};
 
-        array4 = array1; // Now c and a are pointing to the same array
+        array4 = array1; // Now array4 and array1 are pointing to the same array
 
         System.out.println("Initialization:");
         System.out.println(Arrays.toString(array1));
@@ -38,45 +38,38 @@ public class Array {
     }
 
     private static void fill() {
-        int[] arrayToFill = new int[20];
-        Arrays.fill(arrayToFill, 1);
+        int[] emptyArray = new int[20];
+
+        Arrays.fill(emptyArray, 1);
 
         System.out.println("Fill:");
-        System.out.println(Arrays.toString(arrayToFill));
+        System.out.println(Arrays.toString(emptyArray));
     }
 
     private static void copy() {
-        Integer[] originalArray = new Integer[10];
-        Integer[] copyArray = new Integer[10];
+        Integer[] array1 = new Integer[10];
+        Integer[] array2 = new Integer[10];
 
-        Arrays.fill(originalArray, 1);
-        Arrays.fill(copyArray, 2);
+        Arrays.fill(array1, 1);
+        Arrays.fill(array2, 2);
 
-        System.out.println("Copy");
-        System.out.println(Arrays.toString(originalArray));
-        System.out.println(Arrays.toString(copyArray));
+        System.out.println("Copy array1 (" + Arrays.toString(array1) + ") to array2 (" + Arrays.toString(array2) + ")");
 
-        System.arraycopy(originalArray, 0, copyArray, 0, originalArray.length);
+        System.arraycopy(array1, 0, array2, 0, array1.length);
 
-        System.out.println("After copy:");
-        System.out.println(Arrays.toString(originalArray));
-        System.out.println(Arrays.toString(copyArray));
+        System.out.println("array1: " + Arrays.toString(array1));
+        System.out.println("array2: " + Arrays.toString(array2));
     }
 
     private static void compare() {
         Integer[] a = {0, 1, 2};
         Integer[] b = {0, 1, 2};
 
-        System.out.println("\nComparison");
-        System.out.println("originalArray == copyArray:" + Arrays.equals(a, b));
+        System.out.println("(" + Arrays.toString(a) + " == " + Arrays.toString(b) + ") = " + Arrays.equals(a, b));
     }
 
     public static void sort() {
-        Integer[] unsortedArray = new Integer[10];
-
-        for (int i = 0; i < 10; i++) {
-            unsortedArray[i] = (unsortedArray.length - i);
-        }
+        Integer[] unsortedArray = {0, 1, 3, 5, 7, 9, 2, 4, 6, 8};
 
         System.out.println("Sorting: " + Arrays.toString(unsortedArray));
 
@@ -87,7 +80,7 @@ public class Array {
 
     private static void doBinarySearch() {
         // Only for sorted arrays
-        Integer[] sortedArray = {0, 1, 2};
+        Integer[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int position = Arrays.binarySearch(sortedArray, 8);
 
         System.out.println("Binary search");
