@@ -116,7 +116,7 @@ public class Array {
         }
 
         System.out.println("Arrays vs Lists:");
-        System.out.println("\tArray:" + Arrays.toString(arrayOfIntegers));
-        System.out.println("\tList:" + listOfIntegers);
+        System.out.println("\tArray: " + Arrays.toString(arrayOfIntegers));
+        System.out.println("\tList: " + listOfIntegers);
     }
 }
