@@ -61,10 +61,10 @@ public class Array {
     }
 
     private static void compare() {
-        Integer[] a = {0, 1, 2};
-        Integer[] b = {0, 1, 2};
+        Integer[] array1 = {0, 1, 2};
+        Integer[] array2 = {0, 1, 2};
 
-        System.out.println("Comparison: (" + Arrays.toString(a) + " == " + Arrays.toString(b) + "): " + Arrays.equals(a, b));
+        System.out.println("Comparison: (" + Arrays.toString(array1) + " == " + Arrays.toString(array2) + "): " + Arrays.equals(array1, array2));
     }
 
     public static void sort() {
