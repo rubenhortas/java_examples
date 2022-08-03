@@ -2,9 +2,9 @@ package types.datatypes.enums;
 
 @SuppressWarnings("unused")
 public enum Food {
-    CHIPS,
-    POPCORN,
-    CORN,
-    CHOCOLATE,
-    CANDIES
+    Chips,
+    Popcorn,
+    Corn,
+    Chocolate,
+    Candies
 }

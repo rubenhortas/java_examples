@@ -1,6 +1,6 @@
 package types.datatypes.enums;
 
-public interface MyInterface {
+public interface ISimpsonsCharacters {
     @SuppressWarnings("unused")
     void printStuff();
 }

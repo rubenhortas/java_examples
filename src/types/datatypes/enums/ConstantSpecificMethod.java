@@ -3,25 +3,25 @@ package types.datatypes.enums;
 import java.text.DateFormat;
 import java.util.Date;
 
-/* Java types.datatypes.enums have a very interesting feature that allows you to give
+/* Java enums have a very interesting feature that allows you to give
    each enum instance different behavior by creating methods for each one.
    To do this, you define one or more abstract methods as part of the enum,
    then define the methods for each enum instance.
    Example extracted from the Bruce Eckel's book Thinking in java. */
 public enum ConstantSpecificMethod {
-    DATE_TIME {
+    DateTime {
         String getInfo() {
             return DateFormat.getDateInstance().format(new Date());
         }
     },
 
-    CLASSPATH {
+    ClassPath {
         String getInfo() {
             return System.getenv("CLASSPATH");
         }
     },
 
-    VERSION {
+    Version {
         String getInfo() {
             return System.getProperty("java.version");
         }

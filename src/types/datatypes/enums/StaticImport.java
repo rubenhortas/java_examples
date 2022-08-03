@@ -2,10 +2,10 @@ package types.datatypes.enums;
 
 import static types.datatypes.enums.CustomEnum.*;
 
-public class StaticImportExample {
+public class StaticImport {
     public static void main(String[] args) {
-        System.out.println(ONE);
-        System.out.println(TWO);
-        System.out.println(THREE);
+        System.out.println(One);
+        System.out.println(Two);
+        System.out.println(Three);
     }
 }

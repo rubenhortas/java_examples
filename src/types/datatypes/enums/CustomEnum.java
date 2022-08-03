@@ -2,9 +2,9 @@ package types.datatypes.enums;
 
 // Example of enum with assigned values.
 public enum CustomEnum {
-    ONE(1),
-    TWO(2),
-    THREE(3);
+    One(1),
+    Two(2),
+    Three(3);
 
     private final int enumValue;
 
