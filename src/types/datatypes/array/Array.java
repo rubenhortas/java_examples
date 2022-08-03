@@ -65,7 +65,7 @@ public class Array {
         Integer[] a = {0, 1, 2};
         Integer[] b = {0, 1, 2};
 
-        System.out.println("(" + Arrays.toString(a) + " == " + Arrays.toString(b) + ") = " + Arrays.equals(a, b));
+        System.out.println("Comparison: (" + Arrays.toString(a) + " == " + Arrays.toString(b) + "): " + Arrays.equals(a, b));
     }
 
     public static void sort() {
@@ -83,8 +83,7 @@ public class Array {
         Integer[] sortedArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int position = Arrays.binarySearch(sortedArray, 8);
 
-        System.out.println("Binary search");
-        System.out.println("Position of 8 in sortedArray: " + position);
+        System.out.println("Binary search: Position of 8 in sortedArray: " + position);
     }
 
     private static void compareArraysAndLists() {
@@ -101,12 +100,8 @@ public class Array {
         }
 
         System.out.println("Arrays vs Lists:");
-        System.out.println("Array:");
-        System.out.println(arrayOfIntegers[6]);
-        System.out.println(Arrays.toString(arrayOfIntegers));
-        System.out.println("List:");
-        System.out.println(listOfIntegers.get(6));
-        System.out.println(listOfIntegers);
+        System.out.println("Array:" + Arrays.toString(arrayOfIntegers));
+        System.out.println("List:" + listOfIntegers);
     }
 
     private static void convertArrayListToArray() {
