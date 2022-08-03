@@ -10,27 +10,31 @@ public class Array {
         fill();
         copy();
         compare();
-        sort();
+        sort(); // Quicksort for primitives, Merge sort for objects
+        doBinarySearch();
         convertArrayListToArray();
         compareArraysAndLists();
     }
 
+    @SuppressWarnings("MismatchedReadAndWriteOfArray")
     private static void initialize() {
-        Integer[] a; // Or Integer a[]
-        Integer[] b = new Integer[5];   // Initialized to point to an array
+        Integer[] array1; // Or Integer array1[]
+        Integer[] array2 = new Integer[5];   // Initialized to point to an array
         // The references inside the array are automatically initialized to null
         // Aggregate initialization
-        Integer[] c = {0, 1, 2};
+        Integer[] array3 = {0, 1, 2};
+        Integer[] array4;
 
         // Dynamic aggregate initialization
-        a = new Integer[]{3, 4, 5};
+        array1 = new Integer[]{3, 4, 5};
 
-        c = a; // Now c and a are pointing to the same array
+        array4 = array1; // Now c and a are pointing to the same array
 
         System.out.println("Initialization:");
-        System.out.println(Arrays.toString(a));
-        System.out.println(Arrays.toString(b));
-        System.out.println(Arrays.toString(c));
+        System.out.println(Arrays.toString(array1));
+        System.out.println(Arrays.toString(array2));
+        System.out.println(Arrays.toString(array3));
+        System.out.println(Arrays.toString(array4));
     }
 
     private static void fill() {
@@ -74,14 +78,14 @@ public class Array {
             unsortedArray[i] = (unsortedArray.length - i);
         }
 
-        System.out.println(String.format("Sorting: %s", Arrays.toString(unsortedArray)));
+        System.out.println("Sorting: " + Arrays.toString(unsortedArray));
 
         Arrays.sort(unsortedArray); // Quicksort for primitives, Merge sort for objects
 
-        System.out.println(String.format("Sorted: %s", Arrays.toString(unsortedArray)));
+        System.out.println("Sorted: " + Arrays.toString(unsortedArray));
     }
 
-    private static void runBinarySearch() {
+    private static void doBinarySearch() {
         // Only for sorted arrays
         Integer[] sortedArray = {0, 1, 2};
         int position = Arrays.binarySearch(sortedArray, 8);
@@ -112,7 +116,7 @@ public class Array {
         System.out.println(listOfIntegers);
     }
 
-    private static void convertArrayListToArray(){
+    private static void convertArrayListToArray() {
         String[] stringArray;
         ArrayList<String> arrayList = new ArrayList<>();
 
