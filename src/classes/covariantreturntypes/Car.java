@@ -1,4 +1,4 @@
-package types.covariantreturntypes;
+package classes.covariantreturntypes;
 
 public class Car extends Vehicle {
     public String toString() {

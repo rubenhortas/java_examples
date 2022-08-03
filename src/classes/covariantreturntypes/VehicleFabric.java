@@ -1,4 +1,4 @@
-package types.covariantreturntypes;
+package classes.covariantreturntypes;
 
 public class VehicleFabric {
     public Vehicle manufacture() {
