@@ -3,51 +3,60 @@ package types.datatypes.lists.list;
 import java.util.ArrayList;
 
 public class List {
-    @SuppressWarnings("SlowListContainsAll")
-    public static void main(String[] args) {
-        java.util.List<String> heroes = new ArrayList<>();
+    private static final java.util.List<String> heroes = new ArrayList<>();
+    private static java.util.List<String> avengers;
+    private static java.util.List<String> dcHeroes;
 
-        // Insert some elements
+    public static void main(String[] args) {
+        insert();
+        contains();
+        copy();
+        remove();
+        get();
+        set(); // Replace
+    }
+
+    private static void insert() {
         heroes.add("Batman");
         heroes.add("Green Lantern");
         heroes.add("Hulk");
         heroes.add("Thor");
-        System.out.println("Heroes types.datatypes.lists.list: " + heroes);
-        System.out.println();
 
-        // Insert at an index
-        heroes.add(0, "Spiderman");
-        System.out.println("List after add \"Spiderman\" at 0 position: " + heroes);
-        System.out.println();
+        heroes.add(0, "Superman"); // Insert at index
 
-        // Sublists
-        java.util.List<String> avengers = heroes.subList(3, 5);
-        System.out.println("Heroes types.datatypes.lists.list contains avengers: " + heroes.containsAll(avengers));
-        System.out.println();
+        avengers = heroes.subList(3, 5);
+        dcHeroes = new ArrayList<>(heroes.subList(0, 3));
 
-        // Copy
-        java.util.List<String> copyList = new ArrayList<>(heroes); // Fresh copy
-        System.out.println("Copy types.datatypes.lists.list: " + copyList);
-        System.out.println();
+        System.out.println("Heroes: " + heroes);
+        System.out.println("Avengers:" + avengers);
+        System.out.println("DC heroes: " + dcHeroes);
+    }
 
-        // Remove
-        java.util.List<String> listToRemove = new ArrayList<>(heroes.subList(0, 3));
-        System.out.println("listToRemove types.datatypes.lists.list: " + listToRemove);
-        listToRemove.removeAll(avengers); // Removes EXACT objects
-        System.out.println("listToRemove types.datatypes.lists.list without avengers: " + listToRemove);
-        System.out.println();
+    @SuppressWarnings("SlowListContainsAll")
+    private static void contains() {
+        System.out.println("Avengers contains Hulk: " + avengers.contains("Hulk"));
+        System.out.println("Heroes contains avengers: " + heroes.containsAll(avengers));
+    }
 
-        // Replace an element
-        listToRemove.set(2, "Superman");
-        System.out.println("listToRemove: " + listToRemove);
-        System.out.println();
+    private static void copy() {
+        java.util.List<String> copyList = new ArrayList<>(heroes); // Fresh copy.
 
-        // Contains
-        System.out.println("Avengers contains Hulk = " + avengers.contains("Hulk"));
-        System.out.println();
+        System.out.println("Copy: " + copyList);
+    }
 
-        // Get
-        System.out.println("Avengers.get(1): " + avengers.get(1));
-        System.out.println();
+    private static void remove() {
+        heroes.removeAll(avengers); // Removes EXACT objects
+
+        System.out.println("Removing the Avengers... Heroes: " + heroes);
+    }
+
+    private static void get() {
+        System.out.println("dHeroes.get(1): " + dcHeroes.get(1));
+    }
+
+    private static void set() {
+        dcHeroes.set(2, "Flash");
+
+        System.out.println("DC Heroes: " + dcHeroes);
     }
 }
