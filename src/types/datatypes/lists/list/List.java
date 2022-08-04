@@ -39,7 +39,7 @@ public class List {
     }
 
     private static void copy() {
-        java.util.List<String> copyList = new ArrayList<>(heroes); // Fresh copy.
+        java.util.List<String> copyList = new ArrayList<>(heroes); // Fresh copy
 
         System.out.println("Copy: " + copyList);
     }

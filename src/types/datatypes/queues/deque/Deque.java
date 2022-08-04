@@ -3,7 +3,7 @@ package types.datatypes.queues.deque;
 import java.util.ArrayDeque;
 
 public class Deque {
-    // A Deque (double ended queue) is like a queue, but you can add and remove elements from either end.
+    // A Deque (double ended queue) is like a queue, but you can add and remove elements from either end
     public static void main(String[] args) {
         java.util.Deque<String> deque = new ArrayDeque<>();
 

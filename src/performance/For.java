@@ -11,7 +11,7 @@ public class For {
     private static final int LIST_SIZE = 1000000;
 
     public static void main(String[] args) {
-        Instant start; // Requires java 8.
+        Instant start; // Requires java 8
         Instant finish;
         long time;
         List<Integer> numbers = IntStream.range(0, LIST_SIZE).boxed().toList();

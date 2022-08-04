@@ -4,7 +4,7 @@ public class FinalArguments {
     @SuppressWarnings({"SameParameterValue", "EmptyMethod", "unused"})
     void withFinalArguments(final MyClass mc) {
 
-        // The final local variable mc cannot be assigned. It must be blank and not using a compound assignment.
+        // The final local variable mc cannot be assigned. It must be blank and not using a compound assignment
         // mc = new MyClass(); // illegal, mc is final
     }
 

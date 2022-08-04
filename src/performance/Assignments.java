@@ -8,7 +8,7 @@ public class Assignments {
     private static final int ASSIGNMENTS = 100000;
 
     public static void main(String[] args) {
-        Instant start; // Requires java 8.
+        Instant start; // Requires java 8
         Instant finish;
         long time;
 
@@ -20,7 +20,7 @@ public class Assignments {
         time = Duration.between(start, finish).toMillis();
         System.out.printf("Assigning the variable inside the loop: %d milliseconds.\n", time);
 
-        // Assigning the variable outside the loop is slightly faster.
+        // Assigning the variable outside the loop is slightly faster
         start = Instant.now();
         assignOutsideTheLoop();
         finish = Instant.now();

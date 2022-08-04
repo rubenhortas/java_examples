@@ -16,7 +16,7 @@ public class FormatSpecifiers {
         f.format("*%.10s*\n", str); // 10 chars long string representation
 
         // Precision specifies the number of decimal places to display,
-        // rounding if there are too many or adding zeroes if there are too few.
+        // rounding if there are too many or adding zeroes if there are too few
         f.format("*%30.10f*\n", f1);
         f.format("*%30.10f*\n", f2);
         f.format("*%2.3f*\n", f1);

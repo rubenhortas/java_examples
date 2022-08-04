@@ -92,8 +92,8 @@ public class Array {
         arrayList.add("string1");
         arrayList.add("string2");
 
-        // The toArray() method without passing any argument returns Object[].
-        // So you have to pass an array as an argument, which will be filled with the data from the list, and returned.
+        // The toArray() method without passing any argument returns Object[]
+        // So you have to pass an array as an argument, which will be filled with the data from the list, and returned
         // Due to JVM optimizations using new String[0] is better than new String[lists.list.size()]
         stringArray = arrayList.toArray(new String[0]);
 
@@ -103,7 +103,7 @@ public class Array {
     }
 
     private static void compareArraysAndLists() {
-        // Arrays are more efficient, but lists automatically allocates more space.
+        // Arrays are more efficient, but lists automatically allocates more space
         Integer[] arrayOfIntegers = new Integer[10];
         List<Integer> listOfIntegers = new ArrayList<>();
 

@@ -1,7 +1,7 @@
 package types.datatypes.enums;
 
 public class Implementation {
-    // An enum can implement one or more interfaces.
+    // An enum can implement one or more interfaces
     @SuppressWarnings("unused")
     private enum SimpsonsCharacters implements ISimpsonsCharacters {
         Ralph, Lisa, Bart;

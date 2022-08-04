@@ -15,7 +15,7 @@ public class LinkedList {
         items.addFirst(new Item(0));
         System.out.println("After addFirst(): " + items);
 
-        items.offer(new Item(99)); // Adds the specified element as the tail ot the list.
+        items.offer(new Item(99)); // Adds the specified element as the tail ot the list
         System.out.println("After offer(): " + items);
 
         items.add(new Item(100)); // Equivalent to addLast

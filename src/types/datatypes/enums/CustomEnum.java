@@ -1,6 +1,6 @@
 package types.datatypes.enums;
 
-// Example of enum with assigned values.
+// Example of enum with assigned values
 public enum CustomEnum {
     One(1),
     Two(2),

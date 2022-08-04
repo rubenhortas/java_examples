@@ -4,8 +4,8 @@ import iterator.Item;
 
 import java.util.List;
 
-/* The ListIterator is a more powerful subtype of Iterator that is produced only by types.datatypes.lists.list classes.
-   ListIterator is bidirectional, can move forward and backward. */
+/*  The ListIterator is a more powerful subtype of Iterator that is produced only by list classes.
+    ListIterator is bidirectional, can move forward and backward. */
 public class ListIterator {
     public static void main(String[] args) {
         // Item class from Iterator example

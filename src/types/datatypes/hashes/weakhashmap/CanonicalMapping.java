@@ -19,7 +19,7 @@ public class CanonicalMapping {
             Value v = new Value(Integer.toString(i));
 
             if ((i % 3) == 0) {
-                keys[i] = k; // Save as "real" references.
+                keys[i] = k; // Save as "real" references
             }
 
             weakHashMap.put(k, v);
