@@ -14,9 +14,9 @@ public class PriorityQueue {
         System.out.println();
     }
 
-    /* A priority queue says that the element that goes next is the one with
-       the highest priority.
-       You can modify the order by providing your own Comparator. */
+    /*  A priority queue says that the element that goes next is the one with
+        the highest priority.
+        You can modify the order by providing your own Comparator. */
     public static void main(String[] args) {
         java.util.PriorityQueue<Integer> priorityQueue;
         List<Integer> intList = new ArrayList<>();
@@ -25,7 +25,7 @@ public class PriorityQueue {
             intList.add(i);
         }
 
-        // Default Comparator. FIFO.
+        // Default Comparator. FIFO
         priorityQueue = new java.util.PriorityQueue<>(intList.size());
         priorityQueue.addAll(intList);
         printQueue(priorityQueue);

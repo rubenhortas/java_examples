@@ -1,7 +1,6 @@
-package types.parametrizedtypes;
+package types.parametrized;
 
 public class ParametrizedHandler<T> {
-
     private final T t;
 
     public ParametrizedHandler(T t) {
@@ -11,6 +10,7 @@ public class ParametrizedHandler<T> {
     @SuppressWarnings("UnusedReturnValue")
     public T get() {
         System.out.println(this.t.getClass().getName());
+
         return this.t;
     }
 }

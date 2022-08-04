@@ -6,9 +6,8 @@ import java.util.List;
 
 public class Stack {
     public static void main(String[] args) {
-        // Item class from Iterator example
         java.util.Stack<Item> stack = new java.util.Stack<>();
-        List<Item> items = Item.arrayList(10);
+        List<Item> items = Item.arrayList(10); // Item class from Iterator example
 
         for (Item item : items) {
             stack.push(item);
