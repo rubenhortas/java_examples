@@ -1,28 +1,28 @@
 package types.datatypes.hashes.weakhashmap;
 
 public class Element {
-    private final String identity;
+    private final String id;
 
     public Element(String id) {
-        identity = id;
+        this.id = id;
     }
 
     public String toString() {
-        return identity;
+        return id;
     }
 
     public int hashCode() {
-        return identity.hashCode();
+        return id.hashCode();
     }
 
-    public boolean equals(Object r) {
-        return r instanceof Element &&
-                identity.equals(((Element) r).identity);
+    public boolean equals(Object object) {
+        return object instanceof Element &&
+                id.equals(((Element) object).id);
     }
 
     @SuppressWarnings("removal")
     @Override
     protected void finalize() {
-        System.out.println("Finalizing " + getClass().getSimpleName() + " " + identity);
+        System.out.println("Finalizing " + getClass().getSimpleName() + " " + id);
     }
 }
